@@ -1,21 +1,19 @@
-# SOC Analyst Journey - Hands-on Labs
+# SOC Analyst Training & Labs 🛡️
 
-Aspiring SOC Analyst | Tracking my journey into cyber defense through hands-on labs, traffic analysis, and system hardening.
+This repository contains my progress in cybersecurity, combining professional certification notes and hands-on laboratory work.
 
-## 🛠 Tech Stack
-- **OS:** Kali Linux (Dedicated Lab Environment)
-- **Tools:** Nmap, Wireshark, Git, Bash Scripting
-- **Skills:** Log Analysis, Network Scanning, Automation
+## 🎓 Professional Education
+### [Google Cybersecurity Professional Certificate](./Google-Cybersecurity-Cert/)
+- **Status:** In Progress
+- **Focus:** SOC Operations, Network Security, Python for Security, and Linux.
+- [View My Notes](./Google-Cybersecurity-Cert/Notes/)
 
-## 📂 Projects & Investigations
-
-### 🛡 System Hardening & Monitoring
-- **[System Health Script](./system_check.sh):** A custom Bash script to monitor CPU, RAM, and network status.
-- **Log Analysis:** Investigating system authentication logs (`login_history.txt`) to identify user activity.
-
-### 🔍 Network Analysis
-- **Nmap Scanning:** Performed local network reconnaissance and service enumeration. 
-- **Environment:** Hardened Kali Linux workstation with optimized 12GB RAM configuration.
+## 🛠️ Hands-on Laboratory Work
+### [My Practice Labs](./Hands-on-Labs/)
+Direct application of skills in a Kali Linux environment:
+- **Automation:** [System Monitoring Script](./Hands-on-Labs/system_check.sh)
+- **Network Recon:** Nmap scan reports and service discovery.
+- **Log Analysis:** Investigating authentication logs.
 
 ---
-*Continuous learning in progress...* 🚀.
+**Tech Stack:** Kali Linux | 12GB RAM | i3-7020U | Zsh

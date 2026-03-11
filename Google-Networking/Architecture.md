@@ -23,3 +23,11 @@ If a process is found stealing bandwidth (via nethogs), use the **kill** command
    sudo kill -9 <PID>
    ```
    *Note: Use -9 only if the process is unresponsive or definitely malicious.*
+
+## 📜 The TCP/IP Model & Ports
+- **IP (Internet Protocol):** Handles addressing and routing (The Home Address).
+- **TCP (Transmission Control Protocol):** Handles connection and reliable delivery (The Delivery Guarantee).
+- **Ports:** Software-based locations to organize traffic (The Apartment Number).
+    - **Port 20/21:** FTP (File Transfer).
+    - **Port 25:** SMTP (Email).
+    - **Port 80/443:** HTTP/HTTPS (Web traffic).

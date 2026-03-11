@@ -31,3 +31,11 @@ If a process is found stealing bandwidth (via nethogs), use the **kill** command
     - **Port 20/21:** FTP (File Transfer).
     - **Port 25:** SMTP (Email).
     - **Port 80/443:** HTTP/HTTPS (Web traffic).
+
+## 🚀 Encapsulation Example: Ping
+How a packet travels through TCP/IP layers:
+1. **Application:** `ping` creates an ICMP request.
+2. **Internet:** Adds **Source IP** and **Destination IP**.
+3. **Network Access:** Uses **ARP** to find **MAC addresses** and sends bits via Wi-Fi/Ethernet.
+
+*Tip: If you can't ping a device, check Layer 3 (IP/Routing) and Layer 4 (Firewall rules).*

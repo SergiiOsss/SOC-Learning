@@ -1,19 +1,27 @@
-# SOC Analyst Training & Labs 🛡️
+# 🛡️ SOC Analyst Learning Journey (Google Cybersecurity)
 
-This repository contains my progress in cybersecurity, combining professional certification notes and hands-on laboratory work.
-
-## 🎓 Professional Education
-### [Google Cybersecurity Professional Certificate](./Google-Cybersecurity-Cert/)
-- **Status:** In Progress
-- **Focus:** SOC Operations, Network Security, Python for Security, and Linux.
-- [View My Notes](./Google-Cybersecurity-Cert/Notes/)
-
-## 🛠️ Hands-on Laboratory Work
-### [My Practice Labs](./Hands-on-Labs/)
-Direct application of skills in a Kali Linux environment:
-- **Automation:** [System Monitoring Script](./Hands-on-Labs/system_check.sh)
-- **Network Recon:** Nmap scan reports and service discovery.
-- **Log Analysis:** Investigating authentication logs.
+Welcome! This repository tracks my progress and hands-on laboratory work as I train for a **SOC Analyst** role.
 
 ---
-**Tech Stack:** Kali Linux | 12GB RAM | i3-7020U | Zsh
+
+## 📊 Core Skills & Tools
+- **Networking:** OSI Model, TCP/IP, Packet Analysis (Wireshark).
+- **Monitoring:** Real-time traffic analysis using `nload` and `nethogs`.
+- **System Management:** Linux process monitoring with `htop` and `ps`.
+- **Security:** Incident Response (killing malicious processes), Port Scanning.
+
+---
+
+## 📂 Practical Labs
+Detailed logs and snapshots from my Kali Linux environment:
+
+### 🌐 [Google Networking: Architecture & Security](./Google-Networking/Architecture.md)
+Concepts of LAN/WAN, Cloud computing (SaaS/IaaS/PaaS), and Packet Anatomy.
+
+### 🛠️ [Hands-on Monitoring Lab](./Hands-on-Labs/README.md)
+- [Active Network Connections](./Hands-on-Labs/network_connections.txt)
+- [Live System Snapshots](./Hands-on-Labs/system_processes.txt)
+
+---
+
+*Current System: Lenovo (Kali Linux)*

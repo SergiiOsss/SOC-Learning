@@ -39,3 +39,9 @@ How a packet travels through TCP/IP layers:
 3. **Network Access:** Uses **ARP** to find **MAC addresses** and sends bits via Wi-Fi/Ethernet.
 
 *Tip: If you can't ping a device, check Layer 3 (IP/Routing) and Layer 4 (Firewall rules).*
+
+### 🔍 Digging deeper with 'dig'
+The `dig` command is used to gather information about DNS records. 
+- **Usage:** `dig <domain_name>`
+- **Verify with external DNS:** `dig @8.8.8.8 <domain_name>`
+- **SOC Use Case:** Identifying **DNS Spoofing** by comparing local results with trusted global DNS servers.

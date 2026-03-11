@@ -1,0 +1,5 @@
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+udp        0      0 0.0.0.0:48075           0.0.0.0:*                           1866/firefox-esr    
+udp        0      0 0.0.0.0:48734           0.0.0.0:*                           1866/firefox-esr    
+udp        0      0 0.0.0.0:52699           0.0.0.0:*                           1866/firefox-esr    

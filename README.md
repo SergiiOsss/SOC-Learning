@@ -1,27 +1,15 @@
-# 🛡️ SOC Analyst Learning Journey (Google Cybersecurity)
+# 🛡️ SOC Analyst Learning Journey
 
-Welcome! This repository tracks my progress and hands-on laboratory work as I train for a **SOC Analyst** role.
+## 📂 Структура бази знань
 
----
+### 🛰️ [Network Fundamentals](./Network-Fundamentals)
+Базові концепції: Моделі OSI/TCP-IP, порти, протоколи IPv4/IPv6.
 
-## 📊 Core Skills & Tools
-- **Networking:** OSI Model, TCP/IP, Packet Analysis (Wireshark).
-- **Monitoring:** Real-time traffic analysis using `nload` and `nethogs`.
-- **System Management:** Linux process monitoring with `htop` and `ps`.
-- **Security:** Incident Response (killing malicious processes), Port Scanning.
+### 🛡️ [Network Security Tools](./Network-Security-Tools)
+Інструменти захисту: Firewalls, VPN (WireGuard/IPSec), Proxy, WPA3, Subnetting.
 
----
-
-## 📂 Practical Labs
-Detailed logs and snapshots from my Kali Linux environment:
-
-### 🌐 [Google Networking: Architecture & Security](./Google-Networking/Architecture.md)
-Concepts of LAN/WAN, Cloud computing (SaaS/IaaS/PaaS), and Packet Anatomy.
-
-### 🛠️ [Hands-on Monitoring Lab](./Hands-on-Labs/README.md)
-- [Active Network Connections](./Hands-on-Labs/network_connections.txt)
-- [Live System Snapshots](./Hands-on-Labs/system_processes.txt)
+### 🧪 [Hands-on Labs](./Hands-on-Labs)
+Практичні роботи: Логи процесів, мережеві з'єднання, сканування.
 
 ---
-
-*Current System: Lenovo (Kali Linux)*
+*Останнє оновлення: Березень 2026*

@@ -45,3 +45,22 @@ The `dig` command is used to gather information about DNS records.
 - **Usage:** `dig <domain_name>`
 - **Verify with external DNS:** `dig @8.8.8.8 <domain_name>`
 - **SOC Use Case:** Identifying **DNS Spoofing** by comparing local results with trusted global DNS servers.
+
+### 🧪 Practical Case: Detecting DNS Spoofing
+**Scenario:** You suspect that a malicious actor has "poisoned" your local DNS cache to redirect you to a fake banking site.
+
+**Step 1: Check local DNS response**
+```bash
+dig google.com
+```
+*(Result: Records the IP provided by 192.168.1.1)*
+
+**Step 2: Cross-verify with a trusted Global DNS (Google)**
+```bash
+dig @8.8.8.8 google.com
+```
+*(Result: Records the authoritative IP from a trusted source)*
+
+**Step 3: Comparison**
+- If IPs match: The network is likely secure.
+- If IPs differ: **Alert!** Possible DNS Hijacking or Spoofing in progress.

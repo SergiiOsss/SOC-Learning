@@ -64,3 +64,15 @@ dig @8.8.8.8 google.com
 **Step 3: Comparison**
 - If IPs match: The network is likely secure.
 - If IPs differ: **Alert!** Possible DNS Hijacking or Spoofing in progress.
+
+## 🔍 IPv4 Header Deep Dive (Layer 3)
+Key fields for security analysis:
+- **TTL (Time to Live):** Prevents routing loops. Used for OS Fingerprinting.
+- **Protocol Field:** Identifies if the payload is TCP (6), UDP (17), or ICMP (1).
+- **Fragmentation Fields:** (ID, Flags, Offset) Used to reassemble split packets. *Attack vector: Fragmentation attacks to bypass IDS.*
+
+## 🌐 IPv4 vs IPv6 Comparison
+- **Exhaustion:** IPv4 is depleted; IPv6 provides 340 undecillion addresses.
+- **Address Format:** - IPv4: Dotted decimal (e.g., 172.217.16.0)
+    - IPv6: Hexadecimal with colons (e.g., 2607:f8b0:4004:80b::200e)
+- **Efficiency:** IPv6 has a simpler header and better routing.

@@ -1,19 +1,19 @@
-# 🔍 Методологія дослідження мережевих інцидентів
+# 🔍 Network Incident Investigation Methodology
 
-Цей документ описує мій підхід до аналізу інцидентів на прикладі збою DNS.
+This document describes my technical approach to incident analysis using a DNS failure case.
 
-## 📥 Етап 1: Збір доказів (Data Collection)
-- **Джерело:** Аналіз логів `tcpdump`, наданих у форматі CSV/Sheets.
-- **Об'єкт:** Трафік між клієнтом (192.51.100.15) та сервером (203.0.113.2).
+## 📥 Phase 1: Data Collection
+- **Source:** Analyzed `tcpdump` logs provided in CSV/Sheets format.
+- **Target:** Traffic between Client (192.51.100.15) and Server (203.0.113.2).
 
-## ⚙️ Етап 2: Аналіз та фільтрація (Processing)
-Я використовував логіку "слідування за пакетом":
-1. Відстеження запиту на порт **53** (DNS).
-2. Аналіз прапорців: виявлення відсутності відповіді [ACK] від служби.
-3. Аналіз повідомлень **ICMP**: ідентифікація коду помилки "Port Unreachable".
+## ⚙️ Phase 2: Processing & Filtering
+I applied a "packet-follow" logic:
+1. Monitored traffic on port **53** (DNS).
+2. Flag Analysis: Identified the absence of [ACK] responses from the service.
+3. ICMP Analysis: Identified the error code "Port Unreachable".
 
-## 💡 Етап 3: Висновки (Root Cause)
-Через те, що сервер повертав ICMP-помилку негайно, я зробив висновок, що проблема не в кабелі чи роутері, а безпосередньо в зупинці служби DNS на цільовому хості.
+## 💡 Phase 3: Conclusion (Root Cause)
+Because the server returned an ICMP error immediately, I concluded that the issue was not network connectivity, but specifically the DNS service being stopped on the target host.
 
-## 🛠 Практичне підтвердження
-Для перевірки цієї теорії я змоделював схожий трафік у середовищі **Kali Linux**, використовуючи `tcpdump` для запису власної мережевої активності.
+## 🛠 Practical Validation
+To verify this theory, I modeled similar traffic in a **Kali Linux** environment using `tcpdump` to record my own network activity.

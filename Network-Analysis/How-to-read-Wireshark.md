@@ -1,13 +1,13 @@
-# 📖 Как читать логи Wireshark (TCP/HTTP)
+# 📖 How to Read Wireshark Logs (TCP/HTTP)
 
-При анализе сетевого трафика важно обращать внимание на следующие элементы:
+When analyzing network traffic, pay attention to the following elements:
 
-1. **Цветовая разметка**: Wireshark подсвечивает разные протоколы (например, HTTP обычно зеленый, TCP — светло-голубой, ошибки — красный).
-2. **Флаги TCP**:
-   - **[SYN]**: Запрос на соединение.
-   - **[SYN, ACK]**: Подтверждение и ответный запрос.
-   - **[ACK]**: Финальное подтверждение соединения.
-3. **HTTP Статусы**:
-   - **200 OK**: Запрос успешен.
-   - **404 Not Found**: Страница не найдена.
-   - **500 Internal Server Error**: Ошибка на стороне сервера.
+1. **Color Coding:** Wireshark highlights different protocols (e.g., HTTP is usually green, TCP is light blue, errors are red).
+2. **TCP Flags:**
+   - **[SYN]**: Connection request.
+   - **[SYN, ACK]**: Acknowledgment and reverse request.
+   - **[ACK]**: Final connection confirmation.
+3. **HTTP Status Codes:**
+   - **200 OK**: Request successful.
+   - **404 Not Found**: Page not found.
+   - **500 Internal Server Error**: Server-side error.

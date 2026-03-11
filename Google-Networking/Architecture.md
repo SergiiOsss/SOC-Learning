@@ -10,3 +10,16 @@ To find which specific application is using the bandwidth, use **nethogs**:
    - **PID:** Process ID (needed to kill the process if it's malicious).
    - **PROGRAM:** The name of the software using the network.
    - **SENT/RECEIVED:** Real-time data usage per app.
+
+## 🗡️ Incident Response: Killing Malicious Processes
+If a process is found stealing bandwidth (via nethogs), use the **kill** command:
+
+1. **Standard Kill:**
+   ```bash
+   sudo kill <PID>
+   ```
+2. **Force Kill (Absolute Stop):**
+   ```bash
+   sudo kill -9 <PID>
+   ```
+   *Note: Use -9 only if the process is unresponsive or definitely malicious.*

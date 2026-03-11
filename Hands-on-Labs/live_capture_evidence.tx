@@ -1,0 +1,20 @@
+14:50:54.566035 wlan0 B   ARP, Request who-has 192.168.1.102 tell 192.168.1.1, length 28
+14:50:55.590185 wlan0 B   ARP, Request who-has 192.168.1.102 tell 192.168.1.1, length 28
+14:50:56.613953 wlan0 B   ARP, Request who-has 192.168.1.102 tell 192.168.1.1, length 28
+14:50:57.024757 wlan0 In  IP 142.250.109.95.443 > 192.168.1.100.55274: Flags [P.], seq 1349773948:1349774112, ack 869172637, win 911, options [nop,nop,TS val 4164788988 ecr 2409844661], length 164
+14:50:57.024781 wlan0 Out IP 192.168.1.100.55274 > 142.250.109.95.443: Flags [.], ack 164, win 57, options [nop,nop,TS val 2409864732 ecr 4164788988], length 0
+14:51:01.529502 wlan0 B   ARP, Request who-has 192.168.1.101 tell 192.168.1.1, length 28
+14:51:02.125828 wlan0 Out IP 192.168.1.100.41682 > 192.168.1.1.53: 50169+ A? gemini.google.com. (35)
+14:51:02.128180 wlan0 Out IP 192.168.1.100.56114 > 142.251.98.138.443: Flags [.], seq 2771352366:2771353766, ack 2287114311, win 1779, options [nop,nop,TS val 3114657564 ecr 2481957204], length 1400
+14:51:02.128206 wlan0 Out IP 192.168.1.100.56114 > 142.251.98.138.443: Flags [P.], seq 1400:2799, ack 1, win 1779, options [nop,nop,TS val 3114657564 ecr 2481957204], length 1399
+14:51:02.128211 wlan0 Out IP 192.168.1.100.41682 > 192.168.1.1.53: 33275+ AAAA? gemini.google.com. (35)
+14:51:02.131216 wlan0 Out IP 192.168.1.100.56114 > 142.251.98.138.443: Flags [P.], seq 2799:2997, ack 1, win 1779, options [nop,nop,TS val 3114657569 ecr 2481957204], length 198
+14:51:02.155724 wlan0 In  IP 142.251.98.138.443 > 192.168.1.100.56114: Flags [.], ack 1400, win 892, options [nop,nop,TS val 2481983420 ecr 3114657564], length 0
+14:51:02.155726 wlan0 In  IP 142.251.98.138.443 > 192.168.1.100.56114: Flags [.], ack 2799, win 892, options [nop,nop,TS val 2481983420 ecr 3114657564], length 0
+14:51:02.156647 wlan0 In  IP 142.251.98.138.443 > 192.168.1.100.56114: Flags [.], ack 2997, win 892, options [nop,nop,TS val 2481983421 ecr 3114657569], length 0
+14:51:02.168774 wlan0 In  IP 192.168.1.1.53 > 192.168.1.100.41682: 33275 0/0/4 (115)
+14:51:02.168775 wlan0 In  IP 192.168.1.1.53 > 192.168.1.100.41682: 50169 6/4/4 A 142.250.120.139, A 142.250.120.100, A 142.250.120.102, A 142.250.120.113, A 142.250.120.138, A 142.250.120.101 (267)
+14:51:02.452332 wlan0 In  IP 142.251.98.138.443 > 192.168.1.100.56114: Flags [P.], seq 1:544, ack 2997, win 892, options [nop,nop,TS val 2481983652 ecr 3114657569], length 543
+14:51:02.452343 wlan0 In  IP 142.251.98.138.443 > 192.168.1.100.56114: Flags [P.], seq 544:826, ack 2997, win 892, options [nop,nop,TS val 2481983652 ecr 3114657569], length 282
+14:51:02.452344 wlan0 In  IP 142.251.98.138.443 > 192.168.1.100.56114: Flags [P.], seq 826:1023, ack 2997, win 892, options [nop,nop,TS val 2481983652 ecr 3114657569], length 197
+14:51:02.452345 wlan0 In  IP 142.251.98.138.443 > 192.168.1.100.56114: Flags [P.], seq 1023:1187, ack 2997, win 892, options [nop,nop,TS val 2481983652 ecr 3114657569], length 164

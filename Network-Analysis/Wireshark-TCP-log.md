@@ -1,16 +1,15 @@
 # 🦈 Wireshark TCP/HTTP Log Analysis
 
-## 📊 Данные лога (TCP handshake)
-В этом логе зафиксировано начало TCP-соединения (SYN пакет).
+## 📊 Packet Data (TCP Handshake)
 
 | No. | Time | Source | Destination | Protocol | Info |
-|-----|------|--------|-------------|----------|------|
-| 47 | 3.144521 | 198.51.100.23 | 192.0.2.1 | TCP | 42584->443 [SYN] Seq=0 Win=5792 Len=120 |
+|:---|:---|:---|:---|:---|:---|
+| 47 | 3.144521 | 198.51.100.23 | 192.0.2.1 | TCP | 42584 → 443 [SYN] Seq=0 Win=5792 Len=120 |
 
-### 🔍 Разбор полей:
-* **No. (Номер)**: Порядковый номер пакета в сессии.
-* **Time (Время)**: Время в секундах с момента начала захвата.
-* **Source (Источник)**: IP-адрес отправителя (198.51.100.23).
-* **Destination (Назначение)**: IP-адрес получателя (192.0.2.1).
-* **Protocol (Протокол)**: Используемый протокол (TCP).
-* **Info (Информация)**: Детали пакета. Здесь виден флаг **[SYN]** — это первый шаг "трехстороннего рукопожатия" (TCP Handshake) на порт **443** (HTTPS).
+### 🔍 Field Analysis:
+- **No.:** Sequence number in the capture.
+- **Time:** Seconds elapsed since start of capture.
+- **Source:** Sender IP (198.51.100.23).
+- **Destination:** Recipient IP (192.0.2.1).
+- **Protocol:** TCP.
+- **Info:** Displays the **[SYN]** flag, indicating the first step of the TCP three-way handshake on Port **443** (HTTPS).
